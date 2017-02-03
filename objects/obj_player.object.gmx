@@ -27,11 +27,11 @@
             <kind>1</kind>
             <string>/// Initialise Variables
 
-grav = 0.2;
+grav = 0.4;
 hsp  = 0;
 vsp  = 0;
-jumpspeed = 7;
-x_pos = floor(0.25 * room_width);
+jumpspeed = 8;
+x_pos = floor(0.2 * room_width);
 </string>
           </argument>
         </arguments>
@@ -54,15 +54,23 @@ x_pos = floor(0.25 * room_width);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>key_jump = mouse_check_button_pressed(mb_any);
+            <string>//Input
+key_jump = keyboard_check_pressed(vk_up);
+key_jump_held = keyboard_check(vk_up);
 
+//Move back position if pushed back
 hsp = x &lt; x_pos;
 
-vsp = min(10, vsp + grav);
+//V speed
+if (vsp &lt; 10) vsp += grav;
 
-if (key_jump &amp;&amp; place_meeting(x, y + 1, obj_platform)) {
-    vsp = -jumpspeed;
+if (key_jump &amp;&amp; place_meeting(x, y + 1, obj_platform)) 
+{
+    vsp = key_jump * -jumpspeed;
 }
+
+//Variable jump height
+if (vsp &lt; 0) &amp;&amp; (!key_jump_held) vsp = max(vsp,0)
 
 // Horizontal Collision
 if (place_meeting(x + round(hsp), y, obj_platform)) {
