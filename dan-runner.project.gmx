@@ -12,18 +12,29 @@
     <sprite>sprites\spr_flat</sprite>
     <sprite>sprites\spr_Dan</sprite>
     <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_options</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_platform</object>
     <object>objects\obj_platform_spawner</object>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_stage</room>
+    <room>rooms\rm_main_menu</room>
+    <room>rooms\rm_controls</room>
+    <room>rooms\rm_score</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
