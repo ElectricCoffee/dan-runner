@@ -45,7 +45,7 @@ platform_inst.image_yscale = room_height div tile_size; // stretch it downwards 
 
 // timer code
 lvl_timer = 0; // counter to keep track of when to increase difficulty
-lvl_time = 700; // interval for increasing difficulty (steps. for time, use room_speed * seconds)
+lvl_time = 400; // interval for increasing difficulty (steps. for time, use room_speed * seconds)
 
 </string>
           </argument>
