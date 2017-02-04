@@ -30,7 +30,7 @@
 grav = 0.4;
 hsp  = 0;
 vsp  = 0;
-jumpspeed = 10;
+jumpspeed = 11;
 x_pos = floor(0.2 * room_width);
 </string>
           </argument>
