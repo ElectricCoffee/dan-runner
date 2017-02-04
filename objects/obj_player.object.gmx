@@ -55,8 +55,8 @@ x_pos = floor(0.2 * room_width);
           <argument>
             <kind>1</kind>
             <string>//Input
-key_jump = keyboard_check_pressed(vk_up);
-key_jump_held = keyboard_check(vk_up);
+key_jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space);
+key_jump_held = keyboard_check(vk_up) || keyboard_check(vk_space);
 
 //Move back position if pushed back
 hsp = x &lt; x_pos;
