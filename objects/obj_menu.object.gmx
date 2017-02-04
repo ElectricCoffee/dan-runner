@@ -28,7 +28,7 @@
             <string>menu[0] = "Start Game";
 menu[1] = "Controls";
 menu[2] = "Scoreboard";
-menu[4] = "Quit Game";
+menu[3] = "Quit Game";
 
 linespace = 64;
 mpos = 0;
