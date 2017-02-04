@@ -31,8 +31,8 @@
     <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_stage</room>
     <room>rooms\rm_main_menu</room>
+    <room>rooms\rm_stage</room>
     <room>rooms\rm_controls</room>
     <room>rooms\rm_score</room>
   </rooms>
