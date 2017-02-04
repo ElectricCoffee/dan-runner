@@ -10,6 +10,7 @@
     <sprite>sprites\spr_platform</sprite>
     <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_flat</sprite>
+    <sprite>sprites\spr_Dan</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

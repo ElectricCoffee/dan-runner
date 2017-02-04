@@ -60,7 +60,7 @@ if (bbox_right &lt; 0) {
             <kind>1</kind>
             <string>for(var i = 0; i &lt; image_xscale; i++) {
     for(var j = 0; j &lt; image_yscale; j++) {
-        draw_sprite(spr_platform, 0, x + i * 32, y + j * 32);    
+        draw_sprite(spr_platform, 0, x + i * 64, y + j * 64);    
     }
 }
 </string>
