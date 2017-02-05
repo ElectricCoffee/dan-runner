@@ -12,6 +12,7 @@
     <sprite>sprites\spr_flat</sprite>
     <sprite>sprites\spr_Dan</sprite>
     <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_building01</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -21,6 +22,7 @@
     <object>objects\obj_player</object>
     <object>objects\obj_platform</object>
     <object>objects\obj_platform_spawner</object>
+    <object>objects\obj_building01</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
