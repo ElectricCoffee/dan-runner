@@ -26,19 +26,26 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialise Variables &amp; Spawn 1st Platform
+
 platform_speed = -4; // initial platform speed
 tile_size = 64; // grid size for placing the platforms
 max_platform_height = 4 // max spawn height of platforms (* tile_size)
 min_platform_height = 3 // min spawn height of platforms (* tile_size)
+
+// distance code
 max_x_dist = 3; // max horizontal distance between platforms
 min_x_dist = 0; // min horizontal distance between platforms
 max_y_dist = 2; // max vertical distance between platforms
+
+// platform code
 platform_inst = instance_create(0, tile_size * ceil (0.5 * (room_height / tile_size)), obj_platform);
 platform_inst.hsp = platform_speed;
 platform_inst.image_xscale = ceil(room_width/tile_size); // stretch the first platform so we have time to prepare for the first jump
 platform_inst.image_yscale = room_height div tile_size; // stretch it downwards out of the screen
+
+// timer code
 lvl_timer = 0; // counter to keep track of when to increase difficulty
-lvl_time = 700; // interval for increasing difficulty (steps. for time, use room_speed * seconds)
+lvl_time = 400; // interval for increasing difficulty (steps. for time, use room_speed * seconds)
 
 </string>
           </argument>
