@@ -14,6 +14,7 @@
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_building01</sprite>
+    <sprite>sprites\spr_time</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -31,6 +32,7 @@
     <object>objects\obj_platform_spawner</object>
     <object>objects\obj_menu</object>
     <object>objects\obj_building01</object>
+    <object>objects\obj_score_timer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_menu</room>
