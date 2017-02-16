@@ -55,8 +55,15 @@ x_pos = floor(0.2 * room_width);
           <argument>
             <kind>1</kind>
             <string>//Input
-key_jump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space);
-key_jump_held = keyboard_check(vk_up) || keyboard_check(vk_space);
+key_jump = keyboard_check_pressed(vk_up) 
+    || keyboard_check_pressed(vk_space) 
+    || gamepad_button_check_pressed(0, gp_face1) 
+    || gamepad_button_check_pressed(0, gp_padu);
+    
+key_jump_held = keyboard_check(vk_up) 
+    || keyboard_check(vk_space)
+    || gamepad_button_check(0, gp_face1) 
+    || gamepad_button_check(0, gp_padu);
 
 //Move back position if pushed back
 hsp = x &lt; x_pos;
